@@ -1,0 +1,15 @@
+<resources>
+    <string name="mae_bundles_scanner_str_scan_tip">将二维码/条形码收入框内，即可扫描</string>
+    <string name="mae_bundles_scanner_album_">相册</string>
+    <string name="mae_bundles_scanner_my_qr_code">我的二维码</string>
+    <string name="mae_bundles_scanner_scan_fun">扫一扫</string>
+    <string name="mae_bundles_scanner_close_light">关灯</string>
+    <string name="mae_bundles_scanner_scaning">正在扫描...</string>
+    <string name="mae_bundles_scanner_choose_sq_image">选择二维码图片</string>
+    <string name="mae_bundles_scanner_parse_image_fail">解析图片失败</string>
+    <string name="mae_bundles_scanner_feedback_tab_processing">处理中...</string>
+    <string name="mae_bundles_scanner_camera_framework_bug">抱歉，Android相机出现问题，请确认开启权限</string>
+    <string name="mae_bundles_scanner_button_ok">确定</string>
+    <string name="mae_bundles_scanner_touch_2_light">轻触照亮</string>
+    <string name="mae_bundles_scanner_no_permission">请在设置中打开相机和存储权限</string>
+</resources>

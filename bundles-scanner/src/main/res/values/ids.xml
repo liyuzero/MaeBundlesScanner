@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="mae_bundles_scanner_auto_focus" type="id"/>
+    <item name="mae_bundles_scanner_decode" type="id"/>
+    <item name="mae_bundles_scanner_decode_failed" type="id"/>
+    <item name="mae_bundles_scanner_decode_succeeded" type="id"/>
+    <item name="mae_bundles_scanner_launch_product_query" type="id"/>
+    <item name="mae_bundles_scanner_quit" type="id"/>
+    <item name="mae_bundles_scanner_restart_preview" type="id"/>
+    <item name="mae_bundles_scanner_return_scan_result" type="id"/>
+    <item name="mae_bundles_scanner_search_book_contents_failed" type="id"/>
+    <item name="mae_bundles_scanner_search_book_contents_succeeded" type="id"/>
+</resources>

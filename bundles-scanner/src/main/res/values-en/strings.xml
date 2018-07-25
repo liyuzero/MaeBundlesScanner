@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">scannerDemo</string>
+    <string name="mae_bundles_scanner_str_scan_tip">Place the qr code/barcode into the box and scan </string>
+    <string name="mae_bundles_scanner_album_">Album</string>
+    <string name="mae_bundles_scanner_my_qr_code">My QR Code</string>
+    <string name="mae_bundles_scanner_scan_fun">Scan</string>
+    <string name="mae_bundles_scanner_close_light">Turn Off the Light</string>
+    <string name="mae_bundles_scanner_scaning">Scanning...</string>
+    <string name="mae_bundles_scanner_choose_sq_image">Choose a QR Code Image</string>
+    <string name="mae_bundles_scanner_parse_image_fail">Parse Image Fails</string>
+    <string name="mae_bundles_scanner_feedback_tab_processing">Processing...</string>
+    <string name="mae_bundles_scanner_camera_framework_bug">Sorry, problems with Android camera, please confirm the Enable permission</string>
+    <string name="mae_bundles_scanner_button_ok">OK</string>
+    <string name="mae_bundles_scanner_touch_2_light">Touch Light</string>
+    <string name="mae_bundles_scanner_no_permission">please confirm the Enable permission</string>
+</resources>
