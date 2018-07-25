@@ -7,11 +7,18 @@ mae-bundles-scanner
 
 ## 使用方法 （详情见demo）
 > 在项目的根目录gradle新增仓库如下：
-```java
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
 
 > 使用module依赖，新增依赖：
-```java
+```
+implementation 'com.github.liyuzero:MaeBundlesScanner:1.0.0'
 ```
 
 > 打开扫一扫：
