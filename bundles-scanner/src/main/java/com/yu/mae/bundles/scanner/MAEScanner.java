@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
 import com.yu.bundles.monitorfragment.MAEMonitorFragment;
@@ -93,6 +94,11 @@ public class MAEScanner {
         return this;
     }
 
+    public MAEScanner setToolbar(ToolbarInitInterface toolbarInitInterface){
+        maeScannerParams.setToolbarInitInterface(toolbarInitInterface);
+        return this;
+    }
+
     public void forResult(final int requestCode){
         final Activity activity = mContext.get();
         if(activity == null){
@@ -148,5 +154,9 @@ public class MAEScanner {
     private int dip2px(Context context, float dipValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dipValue * scale + 0.5f);
+    }
+
+    public interface ToolbarInitInterface {
+        void initToolbar(ScannerManager scannerManager, Toolbar toolbar);
     }
 }

@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -55,6 +57,22 @@ public class MainActivity extends AppCompatActivity {
 
                                             }
                                         });
+                            }
+                        })
+                        .setToolbar(new MAEScanner.ToolbarInitInterface() {
+                            @Override
+                            public void initToolbar(final ScannerManager scannerManager, Toolbar toolbar) {
+                                toolbar.inflateMenu(com.yu.mae.bundles.scanner.R.menu.mae_bundles_scanner_menu_capture);
+                                toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+                                    @Override
+                                    public boolean onMenuItemClick(MenuItem item) {
+                                        if (item.getItemId() == com.yu.mae.bundles.scanner.R.id.action_toggle_flash) {
+                                            //相册
+                                            scannerManager.openAlbum();
+                                        }
+                                        return true;
+                                    }
+                                });
                             }
                         })
                         .setRectEdgeWidthRate(0.68)

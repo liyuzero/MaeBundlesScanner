@@ -121,6 +121,7 @@ public final class CaptureActivity extends AppCompatActivity implements SurfaceH
 
     private void initToolbar(){
         Toolbar toolbar = findViewById(R.id.mae_id_scan_toolbar);
+
         toolbar.setNavigationIcon(R.drawable.mae_bundles_scanner_back);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,17 +129,9 @@ public final class CaptureActivity extends AppCompatActivity implements SurfaceH
                 finish();
             }
         });
-        toolbar.inflateMenu(R.menu.mae_bundles_scanner_menu_capture);
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                if (item.getItemId() == R.id.action_toggle_flash) {
-                    //相册
-                    scannerManager.openAlbum();
-                }
-                return true;
-            }
-        });
+        if(MAEScannerParams.getInstance().toolbarInitInterface != null){
+            MAEScannerParams.getInstance().toolbarInitInterface.initToolbar(scannerManager, toolbar);
+        }
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.yu.mae.bundles.scanner;
 import android.app.Activity;
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.Toolbar;
 
 import com.yu.mae.bundles.scanner.manager.ScannerBottomItem;
 import com.yu.mae.bundles.scanner.manager.ScannerManager;
@@ -15,6 +16,8 @@ import java.util.List;
  */
 
 public class MAEScannerParams {
+    //toolbar初始化接口
+    public MAEScanner.ToolbarInitInterface toolbarInitInterface;
     //扫描框四角的线长
     public int rectEdgeLineLen;
     //扫描框四角的线宽
@@ -68,6 +71,7 @@ public class MAEScannerParams {
         bottomItemList.clear();
         onBottomClickListener = null;
         scannerCallBack = null;
+        toolbarInitInterface = null;
     }
 
     public void setAlbumInterface(AlbumInterface albumInterface) {
@@ -116,6 +120,10 @@ public class MAEScannerParams {
 
     void setMiddleLineScanTime(int middleLineScanTime) {
         this.middleLineScanTime = middleLineScanTime;
+    }
+
+    void setToolbarInitInterface(MAEScanner.ToolbarInitInterface initInterface){
+        this.toolbarInitInterface = initInterface;
     }
 
     private int dip2px(Context context, float dipValue) {
