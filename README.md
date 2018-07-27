@@ -9,16 +9,16 @@ mae-bundles-scanner
 > 在项目的根目录gradle新增仓库如下：
 ```
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
 
 > 使用module依赖，新增依赖：
 ```
-implementation 'com.github.liyuzero:MaeBundlesScanner:1.0.0'
+implementation 'com.github.liyuzero:MaeBundlesScanner:1.0.1'
 ```
 
 > 打开扫一扫：
